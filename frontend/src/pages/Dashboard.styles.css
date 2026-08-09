@@ -1,0 +1,121 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-bottom: 44px;
+  margin-bottom: 44px;
+  border-bottom: 1px solid var(--border-soft);
+  max-width: 720px;
+}
+
+.hero-title {
+  font-size: 42px;
+  line-height: 1.12;
+}
+
+.hero-sub {
+  color: var(--text-dim);
+  font-size: 16.5px;
+  max-width: 600px;
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.section-head h2 {
+  font-size: 20px;
+}
+
+.section-count {
+  color: var(--text-faint);
+  font-size: 12.5px;
+}
+
+.muted {
+  color: var(--text-dim);
+}
+
+.candidate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.candidate-card {
+  text-align: left;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--text);
+  transition: border-color 0.15s ease, transform 0.12s ease, background 0.15s ease;
+}
+
+.candidate-card:hover {
+  border-color: var(--accent-dim);
+  background: var(--bg-elevated-2);
+  transform: translateY(-2px);
+}
+
+.candidate-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.candidate-name {
+  font-size: 16px;
+}
+
+.candidate-role {
+  color: var(--text-dim);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.candidate-id {
+  font-size: 10.5px;
+  color: var(--text-faint);
+  white-space: nowrap;
+}
+
+.candidate-progress-track {
+  height: 5px;
+  border-radius: 999px;
+  background: var(--bg-elevated-2);
+  overflow: hidden;
+}
+
+.candidate-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--success));
+  border-radius: 999px;
+}
+
+.candidate-progress-label {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--text-faint);
+}
+
+.candidate-meta {
+  font-size: 12.5px;
+  color: var(--text-faint);
+  display: flex;
+  gap: 6px;
+}
+
+@media (max-width: 720px) {
+  .hero-title {
+    font-size: 30px;
+  }
+}
